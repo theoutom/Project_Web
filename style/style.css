@@ -15,7 +15,7 @@
 } 
 	
 .navigation ul {
-	background:#37988e;
+	background:#213B4E;
 	padding: 0 20px;
 	list-style: none;
 	position: relative;
@@ -28,7 +28,7 @@
 }
 
 .navigation ul li:hover{
-	background:#d68d9a;
+	background:#2d516b;
 }
 
 .navigation ul li:hover a{
