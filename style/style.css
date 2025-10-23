@@ -1,44 +1,91 @@
-.logo {
-    width: 179px;
+@font-face {
+	font-family: 'Roboto';
+	src: url(../font/Roboto-Regular.ttf);
 }
 
-* {
- 	margin:0; 
-	padding:0;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
- 
+
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: #eae2b7;
+}
+
+/* Wrapper for logo and navigation */
 .navigation {
-	margin: auto;
-	text-align: center;
-	width: 100%;
-	font-family: Helvetica, sans-serif;
-} 
-	
-.navigation ul {
-	background:#213B4E;
+	display:flex;
+	align-items: start;
+	justify-content: space-between;
 	padding: 0 20px;
+	background: #213B4E;
+	font-family: "Roboto", sans-serif;
+}
+
+/* Logo styling */
+#logo {
+	height:2px; /* Adjust as needed */
+	width:2px;
+}
+
+/* Navigation menu styling */
+.navigation ul {
+	display: flex;
 	list-style: none;
-	position: relative;
-	display: inline-table;
-	width: 100%;
+	margin-left: auto;
 }
 
-.navigation ul li{
-    float:left;
+.navigation ul li {
+	position: flex;
+
 }
 
-.navigation ul li:hover{
-	background:#2d516b;
+.navigation ul li a {
+	display: block;
+	padding: 25px 20px;
+	color: #fff;
+	text-decoration: none;
 }
 
-.navigation ul li:hover a{
- 	color:#000;
+.navigation ul li:hover {
+	background: #2d516b;
 }
 
-.navigation ul li a{
- 	display: block;
- 	padding: 25px;
- 	color: #fff;
- 	text-decoration: none;
+.navigation ul li:hover a {
+	color: #000;
 }
 
+/* Button styles */
+.buttonjadwal {
+	display: flex;
+	font-family: 'Roboto', sans-serif;
+	gap: 20px;
+	cursor: pointer;
+	margin: 20px 10%;
+}
+
+.buttonjadwalbiasa,
+.buttonjadwalupacara {
+	padding: 20px 32px;
+	border: none;
+	color: white;
+	background-color: #f77f00;
+}
+
+.buttonjadwalbiasa:hover,
+.buttonjadwalupacara:hover {
+	background-color: #ff9729;
+}
+
+.imgjadwal {
+	display: block;
+	margin: 20px auto;
+	height: auto;
+}
+
+.left {
+	color: #003049;
+	margin-left: 2em;
+}
